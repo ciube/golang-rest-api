@@ -8,5 +8,5 @@ import (
 // TodoRoute route ai metodi Todo
 func TodoRoute(route fiber.Router) {
 	// metodo GET che mappa il metodo GetTodos
-	route.Get("", controllers.GetTodos())
+	route.Get("", controllers.GetTodos)
 }
