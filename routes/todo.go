@@ -9,4 +9,8 @@ import (
 func TodoRoute(route fiber.Router) {
 	// metodo GET che mappa il metodo GetTodos
 	route.Get("", controllers.GetTodos)
+	route.Get("/:id", controllers.GetTodo)
+	route.Post("", controllers.CreateTodo)
+	route.Put("/:id", controllers.UpdateTodo)
+	route.Delete("/:id", controllers.DeleteTodo)
 }
